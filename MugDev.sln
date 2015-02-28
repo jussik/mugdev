@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.22609.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2279F950-AFCC-431A-93AE-3FE4DABF9347}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F4322787-82C0-4B49-92F1-92973D5827D9}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "MugDev", "src\MugDev\MugDev.kproj", "{3AE60BB9-5FD0-4E28-A581-9B49A40494CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3AE60BB9-5FD0-4E28-A581-9B49A40494CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AE60BB9-5FD0-4E28-A581-9B49A40494CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AE60BB9-5FD0-4E28-A581-9B49A40494CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AE60BB9-5FD0-4E28-A581-9B49A40494CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3AE60BB9-5FD0-4E28-A581-9B49A40494CA} = {2279F950-AFCC-431A-93AE-3FE4DABF9347}
+	EndGlobalSection
+EndGlobal
