@@ -1,7 +1,28 @@
-﻿@bg-color: #272533;
-@font-color: #dddbcb;
+﻿@import "vars.less";
+@import "utils.less";
+@import url(http://fonts.googleapis.com/css?family=Montserrat:700);
 
+html {
+    height: 100%;
+}
 body {
-    background-color: @bg-color;
-    color: @font-color;
+    background: @bg;
+    color: black;
+    font-family: @body-font;
+    height: 100%;
+    margin: 0;
+}
+#header {
+    padding: 10px;
+    margin: 0;
+    .text-shadow;
+    .box-shadow(2);
+    //.gradient(@dark, darken(@dark, 10%));
+
+    background-color: @main;
+    color: white;
+    font: 175% @heading-font;
+}
+#header-rhs {
+    float:right;
 }

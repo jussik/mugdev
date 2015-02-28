@@ -19,6 +19,7 @@
         },
         less: {
             styles: {
+                options: { compress: true, ieCompat: false },
                 files: { 'wwwroot/css/app.css': ['Styles/**.less'] }
             }
         },

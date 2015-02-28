@@ -1,4 +1,5 @@
 ﻿(function () {
     'use strict';
-    angular.module('mugs.app', ['ngResource']);
+    angular.module('mugs.utils', []);
+    angular.module('mugs.app', ['mugs.utils', 'ngResource']);
 })();

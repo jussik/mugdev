@@ -1,0 +1,30 @@
+﻿@import "vars.less";
+@import "utils.less";
+
+.pointer {
+    cursor: pointer;
+}
+.round-button {
+    border: none;
+    outline: none;
+    .box-shadow(2);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 48px;
+    color: black;
+    background: @comp;
+    transition: all 0.1s;
+
+    &:active {
+        background: lighten(@comp, 10%);
+        .box-shadow(1);
+    }
+    &.bottom-right {
+        position: absolute;
+        bottom: 16px;
+        right: 16px;
+    }
+}
