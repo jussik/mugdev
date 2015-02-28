@@ -5,6 +5,7 @@
     cursor: pointer;
 }
 .round-button {
+    text-decoration: none;
     border: none;
     outline: none;
     .box-shadow(2);
@@ -16,11 +17,14 @@
     line-height: 48px;
     color: black;
     background: @comp;
-    transition: all 0.1s;
+    transition: all 0.3s;
 
     &:active {
         background: lighten(@comp, 10%);
         .box-shadow(1);
+    }
+    &:hover:not(:active) {
+        background: darken(@comp, 5%);
     }
     &.bottom-right {
         position: absolute;

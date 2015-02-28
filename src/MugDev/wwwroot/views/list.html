@@ -1,0 +1,6 @@
+﻿<div id="mug-list">
+    <div ng-repeat="mug in mugs" class="mug-cell">
+        <h2>{{::mug.title}}</h2>
+        <a class="round-button fa fa-fw fa-pencil bottom-right" ng-href="/edit/{{::mug.id}}"></a>
+    </div>
+</div>
