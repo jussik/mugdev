@@ -1,6 +1,6 @@
 ﻿<div id="mug-list">
-    <div ng-repeat="mug in mugs" class="mug-cell" md-grow-target>
+    <div ng-repeat="mug in mugs" class="mug-cell" mug-grow-target>
         <h2>{{::mug.title}}</h2>
-        <a class="round-button fa fa-fw fa-pencil bottom-right" ng-href="/edit/{{::mug.id}}" md-grow></a>
+        <a class="round-button fa fa-fw fa-pencil bottom-right" ng-href="/edit/{{::mug.id}}" mug-grow></a>
     </div>
 </div>

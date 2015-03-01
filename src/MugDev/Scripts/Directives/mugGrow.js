@@ -1,7 +1,7 @@
 ﻿(function () {
     'use strict';
     angular.module('mugs.app')
-        .directive('mdGrowTarget', function () {
+        .directive('mugGrowTarget', function () {
             return {
                 controller: function ($element) {
                     this.select = function () {
@@ -32,9 +32,9 @@
                 }
             };
         })
-        .directive('mdGrow', function ($location) {
+        .directive('mugGrow', function ($location) {
             return {
-                require: '^mdGrowTarget',
+                require: '^mugGrowTarget',
                 link: function (scope, elem, attr, target) {
                     elem.on('click', function () {
                         target.select();

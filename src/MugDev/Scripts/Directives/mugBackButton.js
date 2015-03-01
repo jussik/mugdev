@@ -1,7 +1,7 @@
 ﻿(function () {
     'use strict';
     angular.module('mugs.app')
-        .directive('mdBackButton', function ($location) {
+        .directive('mugBackButton', function ($location) {
             return function (scope, elem) {
                 var isRoot = false;
                 scope.$on('$routeChangeSuccess', function (ev, route) {
