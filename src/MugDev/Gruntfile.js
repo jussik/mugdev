@@ -22,17 +22,18 @@
         },
         uglify: {
             default: {
+                options: { screwIE8: true },
                 files: { 'wwwroot/js/app.js': ['Build/js/app.annotated.js'] }
             }
         },
         less: {
             release: {
                 options: { compress: true, ieCompat: false },
-                files: { 'wwwroot/css/app.css': ['Styles/**.less'] }
+                files: { 'wwwroot/css/app.css': 'Styles/app.less' }
             },
             debug: {
-                options: { sourceMap: true, ieCompat: false },
-                files: { 'wwwroot/css/app.css': ['Styles/**.less'] }
+                options: { sourceMap: true, outputSourceFiles: true, sourceMapURL: 'app.css.map', sourceMapRootpath: '../', ieCompat: false },
+                files: { 'wwwroot/css/app.css': 'Styles/app.less' }
             }
         },
         watch: {
