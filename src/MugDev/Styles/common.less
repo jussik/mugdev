@@ -17,8 +17,8 @@
     line-height: 48px;
     color: black;
     background: @comp;
-    transition: all 0.3s;
-
+    transition: background, box-shadow 0.3s;
+    
     &:active {
         background: lighten(@comp, 10%);
         .box-shadow(1);
@@ -31,4 +31,16 @@
         bottom: 16px;
         right: 16px;
     }
+}
+
+.grow {
+    position: fixed;
+    margin: 0;
+    width: auto;
+    height: auto;
+    float: none;
+    transition: all @view-anim-duration;
+}
+.grow-active {
+    .box-shadow(2);
 }

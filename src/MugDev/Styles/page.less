@@ -1,0 +1,60 @@
+﻿@import "vars.less";
+@import "utils.less";
+@import url(http://fonts.googleapis.com/css?family=Montserrat:700);
+
+html {
+    height: 100%;
+}
+body {
+    background: @bg;
+    color: black;
+    font-family: @body-font;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+#header {
+    position: absolute;
+    box-sizing: border-box;
+    height: @heading-height;
+    line-height: @heading-height - 16px;
+    width: 100%;
+    padding: 7px;
+    margin: 0;
+    .text-shadow;
+    .box-shadow(2);
+    //.gradient(@dark, darken(@dark, 10%));
+
+    background-color: @main;
+    color: white;
+    font: 28px @heading-font;
+}
+#header-rhs {
+    float:right;
+}
+.main {
+    position:absolute;
+    top: @heading-height;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    opacity: 1;
+}
+
+.slide {
+    transition: opacity @view-anim-duration;
+}
+.slide.ng-enter {
+    opacity: 0;
+
+    &.ng-enter-active {
+        opacity: 1;
+    }
+}
+.slide.ng-leave {
+    opacity: 1;
+
+    &.ng-leave-active {
+        opacity: 0;
+    }
+}
