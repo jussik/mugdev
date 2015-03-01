@@ -63,7 +63,7 @@
                 logConcurrentOutput: true
             },
             release: {
-                tasks: ["watch:annotate", "watch:lessRelease"]
+                tasks: ["watch:annotate", "watch:uglify", "watch:lessRelease"]
             },
             debug: {
                 tasks: ["watch:concat", "watch:lessDebug"]
